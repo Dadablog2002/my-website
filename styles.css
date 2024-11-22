@@ -113,6 +113,15 @@ footer p {
     }
 
     .logo {
-        width: 120px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Округлення кутів */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для краси */
+    transition: transform 0.3s ease; /* Анімація при наведенні */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Легка зміна масштабу при наведенні */
+}
     }
 }
