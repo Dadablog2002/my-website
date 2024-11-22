@@ -184,3 +184,29 @@ body {
         background-position: 0% 50%; /* Повернення до початку */
     }
 }
+
+
+/* Загальний стиль блоку */
+.server-ip {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Ефект поступового появлення */
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 3s forwards; /* Анімація триває 3 секунди */
+}
+
+/* Ключові кадри для fade-in */
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Легкий рух вниз при появі */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
