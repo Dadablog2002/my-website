@@ -140,7 +140,7 @@ footer p {
     transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
 }
 
-body {
+/* body {
     color: #fff; /* Колір тексту */
     text-align: center; /* Вирівнювання тексту */
     margin: 0; /* Забираємо зовнішні відступи */
@@ -194,4 +194,27 @@ body {
         0 0 40px #ff8c00;
     font-weight: bold;
     margin: 10px 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 400% 400%; /* Для плавного переливання */
+    animation: rgbGradient 10s ease infinite;
+}
+
+/* Анімація переливання кольорів */
+@keyframes rgbGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
