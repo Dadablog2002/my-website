@@ -74,10 +74,36 @@ ul li {
     background-color: #ff7f00;
 }
 
-/* Стилі для футера */
 footer {
-    margin-top: 50px;
-    font-size: 1.1em;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+footer .socials p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer .socials a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .socials a img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
 }
 
 .socials img {
