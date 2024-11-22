@@ -131,7 +131,7 @@ footer p {
 }
 
 .neon-block p {
-    font-size: 1.2em; /* Розмір тексту */
+    font-size: 0.2em; /* Розмір тексту */
     color: #ffea00; /* Жовтий колір */
     text-shadow: 
         0 0 5px #ffea00, 
