@@ -127,11 +127,11 @@ footer p {
     text-align: center; /* Вирівнювання тексту */
     margin: 20px auto; /* Відступи для центрування */
     width: 80%; /* Ширина блоку */
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.8); /* Тінь навколо блоку */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Тінь навколо блоку */
 }
 
 .neon-block p {
-    font-size: 1.5em; /* Розмір тексту */
+    font-size: 1.2em; /* Розмір тексту */
     color: #ffea00; /* Жовтий колір */
     text-shadow: 
         0 0 5px #ffea00, 
