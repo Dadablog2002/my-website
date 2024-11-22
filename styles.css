@@ -141,3 +141,25 @@ footer p {
     font-weight: bold; /* Жирний текст */
     margin: 5px 0; /* Відступи між рядками */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff7f00, #2575fc, #6a11cb, #ff4500);
+    background-size: 400% 400%; /* Розмір для плавного переливання */
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* Анімація для переливання */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
