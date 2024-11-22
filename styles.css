@@ -123,23 +123,21 @@ footer p {
 
 .neon-block {
     background-color: rgba(0, 0, 0, 0.7); /* Темний напівпрозорий фон */
-    padding: 20px; /* Внутрішні відступи */
+    padding: 10px; /* Внутрішні відступи */
     border-radius: 10px; /* Згладжені краї */
     text-align: center; /* Центрування тексту */
     margin: 20px auto; /* Відступи зверху та знизу, вирівнювання по центру */
-    width: 80%; /* Ширина блоку */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Тінь блоку */
+    width: 300px; /* Фіксована ширина блоку */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тінь блоку */
 }
 
 .neon-block p {
-    font-size: 1.5em; /* Розмір тексту */
+    font-size: 1em; /* Розмір тексту */
     color: #ffea00; /* Жовтий колір */
     text-shadow: 
+        0 0 3px #ffea00, 
         0 0 5px #ffea00, 
-        0 0 10px #ffea00, 
-        0 0 20px #ffea00, 
-        0 0 40px #ffd700, 
-        0 0 80px #ffd700; /* Ефект неону */
+        0 0 10px #ffea00; /* Легкий ефект неону */
     font-weight: bold; /* Жирний текст */
-    margin: 10px 0; /* Відступи між рядками */
+    margin: 5px 0; /* Відступи між рядками */
 }
