@@ -120,11 +120,3 @@ footer p {
     filter: brightness(1.2); /* Робить зображення світлішим */
     transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
 }
-
-.logo:hover {
-    transform: scale(1.05); /* Легка зміна масштабу при наведенні */
-    filter: brightness(1.4); /* Ще більше освітлення при наведенні */
-}
-}
-    }
-}
