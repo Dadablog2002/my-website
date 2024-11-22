@@ -116,12 +116,15 @@ footer p {
     width: 150px;
     margin-bottom: 20px;
     border-radius: 20px; /* Округлення кутів */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь для краси */
-    transition: transform 0.3s ease; /* Анімація при наведенні */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь */
+    filter: brightness(1.2); /* Робить зображення світлішим */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
 }
 
 .logo:hover {
     transform: scale(1.05); /* Легка зміна масштабу при наведенні */
+    filter: brightness(1.4); /* Ще більше освітлення при наведенні */
+}
 }
     }
 }
