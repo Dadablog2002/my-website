@@ -140,27 +140,6 @@ footer p {
     transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
 }
 
-.neon-block {
-    background-color: rgba(0, 0, 0, 0.7); /* Темний напівпрозорий фон */
-    padding: 10px; /* Внутрішні відступи */
-    border-radius: 10px; /* Згладжені краї */
-    text-align: center; /* Центрування тексту */
-    margin: 20px auto; /* Відступи зверху та знизу, вирівнювання по центру */
-    width: 300px; /* Фіксована ширина блоку */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тінь блоку */
-}
-
-.neon-block p {
-    font-size: 1em; /* Розмір тексту */
-    color: #ffea00; /* Жовтий колір */
-    text-shadow: 
-        0 0 3px #ffea00, 
-        0 0 5px #ffea00, 
-        0 0 10px #ffea00; /* Легкий ефект неону */
-    font-weight: bold; /* Жирний текст */
-    margin: 5px 0; /* Відступи між рядками */
-}
-
 body {
     color: #fff; /* Колір тексту */
     text-align: center; /* Вирівнювання тексту */
@@ -191,4 +170,28 @@ body {
     margin-top: 20px;
     font-size: 1.5em;
     color: #fff;
+}
+
+/* Стиль блоку */
+.neon-block {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Неоновий текст */
+.neon-text {
+    font-size: 1.5em;
+    color: #ffc600; /* Жовтий колір */
+    text-shadow: 
+        0 0 5px #ffc600,
+        0 0 10px #ffc600,
+        0 0 20px #ff8c00,
+        0 0 30px #ff8c00,
+        0 0 40px #ff8c00;
+    font-weight: bold;
+    margin: 10px 0;
 }
