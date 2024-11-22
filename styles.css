@@ -140,30 +140,6 @@ footer p {
     transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
 }
 
-/* body {
-    color: #fff; /* Колір тексту */
-    text-align: center; /* Вирівнювання тексту */
-    margin: 0; /* Забираємо зовнішні відступи */
-    padding: 20px; /* Встановлюємо внутрішній відступ */
-    font-family: Arial, sans-serif; /* Шрифт тексту */
-    background: linear-gradient(45deg, #ff7f00, #2575fc, #6a11cb, #ff4500); /* Градієнт */
-    background-size: 400% 400%; /* Задаємо розмір фону для плавного переливання */
-    animation: gradientAnimation 8s ease infinite; /* Анімація фону */
-}
-
-/* Анімація для градієнта */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%; /* Початкова позиція */
-    }
-    50% {
-        background-position: 100% 50%; /* Плавний перехід */
-    }
-    100% {
-        background-position: 0% 50%; /* Повернення до початку */
-    }
-}
-
 
 /* Загальний стиль блоку */
 .server-ip {
