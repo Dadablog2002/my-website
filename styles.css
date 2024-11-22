@@ -141,3 +141,14 @@ footer p {
     font-weight: bold; /* Жирний текст */
     margin: 5px 0; /* Відступи між рядками */
 }
+
+#server-ip {
+    color: #ff7f00;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#server-ip:hover {
+    color: #ff4500;
+}
