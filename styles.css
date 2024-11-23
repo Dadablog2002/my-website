@@ -21,7 +21,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+
 header {
     margin-bottom: 50px;
 }
@@ -38,7 +38,12 @@ h2 {
 
 .logo {
     width: 150px;
+    height: 150px; /* Встановлюємо висоту і ширину однаковими для квадратного зображення */
     margin-bottom: 20px;
+    border-radius: 20px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легка тінь */
+    filter: brightness(1.2); /* Світліший ефект */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Анімація */
 }
 
 .payment-info {
@@ -104,22 +109,6 @@ footer p {
     color: #cccccc;
 }
 
-}
-
-.socials img {
-    width: 40px;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-.socials img:hover {
-    transform: scale(1.1);
-}
-
-footer p {
-    margin-top: 20px;
-}
-
 /* Мобільна адаптація */
 @media (max-width: 768px) {
     .payment-info {
@@ -132,14 +121,19 @@ footer p {
     }
 
     .logo {
-    width: 150px;
-    margin-bottom: 20px;
-    border-radius: 20px; /* Округлення кутів */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додаємо легку тінь */
-    filter: brightness(1.2); /* Робить зображення світлішим */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Анімація при наведенні */
-}
+        width: 120px;
+        margin-bottom: 20px;
+        border-radius: 50%; /* Округлення для мобільної версії */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легка тінь */
+        filter: brightness(1.2); /* Світліший ефект */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Анімація */
+    }
 
+    .neon-block {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
 
 /* Загальний стиль блоку */
 .server-ip {
@@ -158,19 +152,20 @@ footer p {
     text-align: center;
 }
 
-/* Неоновий текст */
+/* Білий неоновий текст */
 .neon-text {
     font-size: 1.5em;
-    color: #ffc600; /* Жовтий колір */
+    color: #ffffff; /* Білий колір тексту */
     text-shadow: 
-        0 0 5px #ffc600,
-        0 0 10px #ffc600,
-        0 0 20px #ff8c00,
-        0 0 30px #ff8c00,
-        0 0 40px #ff8c00;
+        0 0 5px #ffffff, /* Білий неоновий ефект */
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff,
+        0 0 40px #ffffff; /* Посилення ефекту */
     font-weight: bold;
     margin: 10px 0;
 }
+
 
 body {
     color: #fff; /* Колір тексту */
@@ -194,4 +189,8 @@ body {
     100% {
         background-position: 0% 50%; /* Повернення до початку */
     }
+}
+
+#server-ip:active {
+    color: #ffc400; /* Зміна кольору тексту при натисканні */
 }
