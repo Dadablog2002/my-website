@@ -194,3 +194,68 @@ body {
 #server-ip:active {
     color: #ffc400; /* Зміна кольору тексту при натисканні */
 }
+
+/* Загальний стиль для контейнера правил */
+.rules-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem; /* Зменшуємо внутрішні поля */
+    }
+
+    header h1, header h2 {
+        font-size: 1.5rem; /* Зменшуємо розмір тексту заголовків */
+    }
+
+    .rules-container {
+        flex-direction: column; /* Всі правила в один стовпець */
+        align-items: center;
+    }
+
+    .rule {
+        width: 100%; /* Блоки розтягуються на всю ширину */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Зменшуємо розмір шрифту в меню */
+    }
+}
+
+/* Адаптація для великих екранів (ПК) */
+@media (min-width: 1024px) {
+    .rules-container {
+        justify-content: space-around; /* Розміщення з однаковими відступами */
+    }
+
+    .rule {
+        width: 30%; /* Кожен блок займає третину ширини */
+    }
+}
+
+/* Додаткова адаптація для дуже вузьких екранів (<480px) */
+@media (max-width: 480px) {
+    header h1, header h2 {
+        font-size: 1.2rem; /* Зменшуємо ще більше */
+    }
+
+    .rule {
+        padding: 1rem;
+        font-size: 0.9rem; /* Зменшуємо розмір шрифту в тексті правил */
+    }
+
+    nav {
+        flex-direction: column; /* Меню у вертикальному вигляді */
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0; /* Відступ між пунктами меню */
+    }
+}
